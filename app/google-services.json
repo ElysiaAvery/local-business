@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "260190723754",
+    "firebase_url": "https://localbusiness-ada79.firebaseio.com",
+    "project_id": "localbusiness-ada79",
+    "storage_bucket": "localbusiness-ada79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260190723754:android:95b7a0a7b3eb548e",
+        "android_client_info": {
+          "package_name": "com.example.guest.localbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260190723754-rib8dc3cn857qat5kmn74vpmlk57aqnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjG7JielattQktB4IDl5Jf7w6yYsZsMmQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
