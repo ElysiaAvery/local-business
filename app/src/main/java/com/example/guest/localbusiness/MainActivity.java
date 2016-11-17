@@ -29,6 +29,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         auth = FirebaseAuth.getInstance();
+        FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // user auth state is changed - user is null
+                    // launch login activity
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    finish();
+                }
+            }
+        };
         if (auth.getCurrentUser() != null) {
             // User is logged in
         }
@@ -57,20 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if(v == mSignoutButton) {
             auth.signOut();
-
-// this listener will be called when there is change in firebase user session
-            FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
-                @Override
-                public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                    FirebaseUser user = firebaseAuth.getCurrentUser();
-                    if (user == null) {
-                        // user auth state is changed - user is null
-                        // launch login activity
-                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                        finish();
-                    }
-                }
-            };
+            Intent intent = new Intent(MainActivity.this, SigninActivity.class);
+            startActivity(intent);
         }
     }
 }

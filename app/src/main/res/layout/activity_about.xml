@@ -8,5 +8,32 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.guest.localbusiness.AboutActivity">
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:text="About Us"
+        android:layout_below="@+id/imageView2"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:text="Started in 1989 by some organic people who wanted to do some organic things. They always had a love for organic food. And organic stuff."
+        android:layout_below="@+id/header"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
