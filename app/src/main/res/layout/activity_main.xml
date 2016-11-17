@@ -28,13 +28,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
         android:text="About Us"
         android:id="@+id/aboutLink"
-        android:textSize="20dp"
+        android:textSize="40dp"
         android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_marginTop="235dp"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,7 +41,7 @@
         android:layout_marginBottom="5dp"
         android:text="Contact"
         android:id="@+id/contactLink"
-        android:textSize="20dp"
+        android:textSize="40dp"
         android:layout_below="@+id/aboutLink"
         android:layout_centerHorizontal="true" />
 
@@ -52,7 +51,7 @@
         android:layout_marginBottom="5dp"
         android:text="Our Products"
         android:id="@+id/productLink"
-        android:textSize="20dp"
+        android:textSize="40dp"
         android:layout_below="@+id/contactLink"
         android:layout_centerHorizontal="true" />
 
