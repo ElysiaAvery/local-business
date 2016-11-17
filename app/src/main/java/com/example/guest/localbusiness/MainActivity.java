@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAboutLink.setOnClickListener(this);
         mContactLink.setOnClickListener(this);
         mProductLink.setOnClickListener(this);
+        mSignoutButton.setOnClickListener(this);
     }
 
     @Override

@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin">
@@ -18,10 +17,10 @@
 
         <ImageView
             android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/logo" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -35,7 +34,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/white" />
+                android:textColor="#000" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -54,7 +53,7 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/white" />
+                android:textColor="#000" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -89,7 +88,7 @@
             android:background="@null"
             android:text="@string/btn_link_to_login"
             android:textAllCaps="false"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="15dp" />
     </LinearLayout>
 
