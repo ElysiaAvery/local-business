@@ -9,4 +9,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.guest.localbusiness.AboutActivity">
 
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:text="Contact us"
+        android:layout_below="@+id/imageView2"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: bread_and_pickles@gmail.com"
+        android:id="@+id/textPhone"
+        android:layout_below="@+id/header"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: 1-800-PICKLES"
+        android:id="@+id/textEmail"
+        android:layout_below="@+id/textPhone"
+        android:textSize="20sp"/>
+
 </RelativeLayout>

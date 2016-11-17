@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LocalBusiness</string>
+    <string name="app_name">Bread and Pickle</string>
     <string name="title_activity_contact">ContactActivity</string>
     <string name="title_activity_login">Sign in</string>
 
